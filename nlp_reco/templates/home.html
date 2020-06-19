@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div id="brandname"> Get your job recommendations with NLP </div>
+		</div>
+	</header>
+	<div class="spacer"></div>
+	<div id="introduction">
+        Given a job database and the information you will provide below
+        we will use Natural Language Processing and Machine Learning
+        to recommend job positions matching well with your profile
+    </div>
+    <div class="spacer"></div>
+	<div class="ml-container">
+		<form action="{{url_for('recommend')}}" method="POST">
+            <p>Enter Your Working Experience</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea cols="60" name="work_exp" rows="1" placeholder="Java developer, project manager..."></textarea><br/>
+			<p>Enter Your Current Job Position</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea cols="60" name="current_job" rows="1" placeholder="Scrum master"></textarea><br/>
+			<p> Enter Your Current Job Description</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea cols="60" name="current_job_desc" rows="2" placeholder="Daily meetings, optimizing team production..."></textarea><br/>
+			<p> Enter Your Position(s) of Interest</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea cols="60" name="poi" rows="1" placeholder="Data scientist, software engineer, project manager... "></textarea><br/>
+			<p> Enter Your Current/Preferred Job Location (City or State or Country) </p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea cols="60" name="location" rows="1" placeholder="Paris"></textarea><br/>
+			<p> Choose the maximum distance (in kms) around Your Current/Preferred Job location
+			<select name="distance", id="distance-select">
+          		<option value="0">0</option>
+          		<option value="50">50</option>
+          		<option value="100">100</option>
+          		<option value="200" selected>200</option>
+          		<option value="400">400</option>
+          		<option value="400+">400+</option>
+			</select>
+			</p>
+			<input type="submit" class="btn-info" value="Get my job recommendations">
+		</form>
+	</div>
+
+</body>
+</html>

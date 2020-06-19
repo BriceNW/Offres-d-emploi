@@ -1,0 +1,63 @@
+body{font-size: 15px;
+	 font-family: Arial, Helvetica,sans-serif;
+	 line-height: 1.5px;
+	 padding: 10px 10px 10px 10px;
+	 background-color: #E6E6FA;
+     }
+
+#introduction{font-size: 15px;
+	          font-family: Arial, Helvetica,sans-serif;
+	          font-weight: bold;
+	          }
+
+#brandname{float: left;
+	       font-size: 30px;
+	       color: #fff;
+	       margin: 10px;
+           }
+
+header{background: #042c4c;
+	   height: 50px;
+	   width: 100%;
+	   padding-top: 30px;
+       }
+
+.spacer{height: 20px;}
+
+h1 {font-size: 25px;
+    }
+
+h2 {font-size: 15px;
+    }
+
+.ml-container {font-size: 25px;}
+
+select {height: 25px;
+        width: 50px;
+        }
+
+.btn-info {background-color: #042c4c;
+           font-size: 15px;
+           color: white;
+           font-weight: bold;
+	       height: 50px;
+	       width: 250px;
+	       } /* Blue */
+
+.btn-info:hover {background: #00BFFF;}
+
+table.dataframe, .dataframe th, .dataframe td, .dataframe tr {border: 5px;
+                                                              border-bottom: 1px solid #C8C8C8;
+                                                              border-collapse: collapse;
+                                                              text-align: justify;
+                                                              padding: 20px;
+                                                              margin-bottom: 100px;
+                                                              font-family: Arial, Helvetica,sans-serif;
+                                                              font-size: 12px;
+                                                              line-height: 15px;
+                                                              height: auto;
+                                                              width: auto
+                                                              }
+
+tr:hover {background: #F0FFFF;
+          }

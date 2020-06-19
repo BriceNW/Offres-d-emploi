@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List of recommended jobs</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div id="brandname">Get your job recommendations with NLP</div>
+		</div>
+	</header>
+	<div class="results">
+    <div class="spacer"></div>
+        {% for table in tables %}
+            <h2>{{titles[loop.index]}}</h2>
+            {{ table|safe }}
+        {% endfor %}
+    <div class="spacer"></div>
+	</div>
+
+</body>
+</html>
