@@ -1,4 +1,4 @@
-Trouver des offres d'emploi
+## Trouver des offres d'emploi
 
 Constuire une application web basée sut le NLP pour recommander les offres d'emploi en fonction des similitudes entre le profil des candidats et les offres.
 
